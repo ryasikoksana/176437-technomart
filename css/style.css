@@ -30,7 +30,7 @@ body {
   width: 460px;
   float: left;
   min-height: 42px;
-  font-size: 0px;
+  font-size: 0;
   background-color: #dd7dea;
 }
 
@@ -43,6 +43,7 @@ body {
   vertical-align: top;
   background-color: #ea1233;
 }
+
 .header-top__search {
   display: inline-block;
   width: 230px;
@@ -62,12 +63,13 @@ body {
 .header {
   padding-top: 41px;
   padding-bottom: 60px;
-  margin-bottom: 59px;
   background-color: #d7e5eb;
 }
 
 .header .container {
   margin-bottom: 40px;
+  min-height: 72px;
+  background-color: #843eb1;
 }
 
 .header__name {
@@ -84,7 +86,6 @@ body {
   margin-right: 20px;
   min-height: 72px;
   background-color: #dd7dea;
-
 }
 
 .header__user-block {
@@ -104,6 +105,7 @@ nav.container {
 }
 
 .categories {
+  margin-top: 59px;
   margin-bottom: 20px;
   background-color: #c99144;
 }
@@ -114,14 +116,13 @@ nav.container {
   float: left;
   margin-right: 20px;
   background-color: #dd7dea;
-
 }
 
 .categories .cat-item:last-child {
   margin-right: 0px;
 }
 
-.clearfix {
+.slider-categories {
   margin-bottom: 53px;
   background-color: #8a7dea;
 }
@@ -161,8 +162,9 @@ nav.container {
 
 .product {
   padding: 0;
-  font-size: 0px;
+  font-size: 0;
   margin-bottom: 10px;
+  text-align: center;
   background-color: #8a7dea;
 }
 
@@ -172,8 +174,7 @@ nav.container {
   min-height: 318px;
   margin-right: 20px;
   vertical-align: top;
-  text-align: center;
-  font-size: 13px;
+  font-size: 17px;
   background-color: #dfddf0;
 }
 
@@ -214,63 +215,66 @@ nav.container {
 .service {
   padding-top: 63px;
   padding-bottom: 102px;
-  margin-bottom: 76px;
+  margin-bottom: 77px;
   background-color: #4331c9;
 }
 
 .container__title {
   width: 940px;
-  min-height: 102px;
-  margin-bottom: 68px;
-  background-color: #96c8e3;
+  min-height: 103px;
+  margin-bottom: 74px;
+  background-color: #6eb3d8;
 }
 
 .service__block {
   width: 240px;
   float: left;
-  min-height: 186px;
+  min-height: 182px;
   margin-right: 80px;
-  background-color: #96c8e3;
+  background-color: #6eb3d8;
 }
 
 .service__content {
   width: 380px;
   float: left;
-  min-height: 186px;
-  background-color: #96c8e3;
+  min-height: 176px;
+  background-color: #6eb3d8;
+}
+
+.content-contacts {
+  margin-bottom: 86px;
 }
 
 .content {
   width: 540px;
   float: left;
-  min-height: 374px;
+  min-height: 373px;
   background-color: #4331c9;
 }
 
 .contacts {
   width: 300px;
-  min-height: 374px;
   float: right;
+  min-height: 373px;
   background-color: #4331c9;
 }
 
 .footer-top {
-  margin-bottom: 86px;
-  min-height: 193px;
+  padding-bottom: 53px;
   background-color: #4d6ead;
 }
 
 .footer-top__left {
   width: 380px;
   float: left;
-  min-height: 141px;
+  min-height: 140px;
   background-color: #dd7dea;
 }
 
 .footer-top__right {
   width: 550px;
   float: right;
-  min-height: 141px;
+  min-height: 140px;
   background-color: #dd7dea;
 }
 
@@ -290,6 +294,7 @@ nav.container {
 .footer__social {
   width: 160px;
   float: left;
+  min-height: 42px;
   background-color: #dd7dea;
 }
 
@@ -297,6 +302,80 @@ nav.container {
   width: 300px;
   float: right;
   background-color: #dd7dea;
+}
+
+.breadcrumbs {
+  padding-top: 23px;
+  padding-bottom: 22px;
+  background-color: #dd7dea;
+}
+
+.catalog__title {
+  min-height: 89px;
+  margin-bottom: 20px;
+  background-color: #dd7dea;
+}
+
+.filter {
+  width: 220px;
+  float: left;
+  min-height: 746px;
+  margin-right: 20px;
+  background-color: #dd7dea;
+}
+
+.catalog-list {
+  width: 700px;
+  float: right;
+  min-height: 1052px;
+  padding: 0;
+  margin-bottom: 60px;
+  background-color: #7deaab;
+}
+
+.catalog-list__sort {
+  width: 700px;
+  min-height: 38px;
+  margin-bottom: 20px;
+  background-color: #dd7dea;
+}
+
+.catalog-list .product {
+  width: 700px;
+  min-height: 994px;
+  margin-bottom: 53px;
+  background-color: #8a7dea;
+}
+
+.catalog-list .product__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.catalog-list .product__item {
+  margin-bottom: 20px;
+}
+
+.catalog__nav {
+  width: 284px;
+  min-height: 38px;
+  background-color: #dd7dea;
+}
+
+.catalog-list .product__item:nth-child(7),
+.catalog-list .product__item:nth-child(8),
+.catalog-list .product__item:nth-child(9) {
+  margin-bottom: 0px;
+}
+
+.directory {
+  background-color: #96c8e3;
+}
+
+.directory__content {
+  width: 940px;
+  padding-top: 63px;
+  padding-bottom: 73px;
+  background-color: #c5e229;
 }
 
 h2 {

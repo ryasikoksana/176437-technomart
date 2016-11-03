@@ -7,10 +7,10 @@
   </head>
   <body>
   <header class="header-top">
-      <div class="container  clear">
+      <div class="container  clearfix">
         <div class="container__left">
           <a class="logo" href="#">Техномарт</a>
-          <form class="<header-top__search" action="#" method="post">
+          <form class="header-top__search" action="#" method="post">
             <button>Отправить</button>
             <input type="text" name="search" placeholder="Поиск:">
           </form>
@@ -19,62 +19,63 @@
           <a class="header-top__link  header-top__link--bookmarks" href="#">Закладки:0</a>
           <a class="header-top__link  header-top__link--basket" href="#">Корзина:0</a>
           <a class= "header-top__link  header-top__link--btn" href="#">Оформить заказ</a>
+        </div>
       </div>
     </header>
     <header class="header">
-      <div class="container  clear">
-        <p class="container__left">
+      <div class="container  clearfix">
+        <div class="header__name">
           Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
-        </p>
-        <div class="container__left  header__contacts">
+        </div>
+        <div class="header__contacts">
           <span>+7 (812) 555-05-55</span>
           <small>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</small>
         </div>
-        <div class="container__right">
+        <div class="header__user-block">
           <span class="user-name">Равшан Джамшутович</span><br>
           <a href="#">Мои заказы</a>
           <a href="#">Личный кабинет</a>
         </div>
       </div>
         <nav class="container">
-          <ul>
-            <li>
+          <ul class="container__nav">
+            <li class="container__nav--item">
               <a href="#">Главная</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Компания</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Каталог</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Новости</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Спецпредложения</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Доставка</a>
             </li>
-            <li>
+            <li class="container__nav--item">
               <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="container  catalog  clearfix">
       <nav class="breadcrumbs">
         <a href="#">Главная</a>
         <a href="#">Каталог</a>
         <a href="#">Инструмент</a>
         <span>Перфораторы</span>
       </nav>
-      <h2>Перфораторы</h2>
-      <form class="container__left  filter" action="#" method="post">
+      <h1 class="catalog__title">Перфораторы</h1>
+      <form class="filter" action="#" method="post">
         <span>Фильтр:</span>
-        <h3 class="filter__title">Цена:</h3>
+        <h2 class="filter__title">Цена:</h2>
         <div class="filter__brand">
-          <h3 class="filter__title">Производители:</h3>
+          <h2 class="filter__title">Производители:</h2>
           <input type="checkbox" name="brand-1" id="brand-1" checked>
           <label for="brand-1">BOSCH</label>
           <br>
@@ -90,7 +91,7 @@
           <input type="checkbox" name="brand-5" id="brand-5">
           <label for="brand-5">HITACHI</label>
         </div>
-        <h3 class="filter__title">Питание:</h3>
+        <h2 class="filter__title">Питание:</h2>
         <input type="radio" name="property-1" id="property-1" value="Аккумуляторные" checked>
         <label for="property-1">Аккумуляторные</label>
         <br>
@@ -99,8 +100,8 @@
         <br>
         <button class="btn" type="button">Показать</button>
       </form>
-      <div class="container__right  catalog">
-        <div class="catalog__sort">
+      <div class="container  catalog-list">
+        <div class="catalog-list__sort">
           <span>Сортировка:</span>
           <a class="catalog__link" href="#">По цене</a>
           <a class="catalog__link" href="#">По типу</a>
@@ -171,35 +172,29 @@
             <a class="btn  btn__arrow" href="#">12500 P.</a>
           </li>
         </ul>
+        <div class="catalog__nav">
+            <a class="btn" href="">1</a>
+            <a class="btn" href="">2</a>
+            <a class="btn" href="">3</a>
+            <a class="btn" href="">Следующая</a>
+        </div>
       </div>
-      <ul class="catalog__nav">
-        <li>
-          <a class="btn" href="">1</a>
-        </li>
-        <li>
-          <a class="btn" href="">2</a>
-        </li>
-        <li>
-          <a class="btn" href="">3</a>
-        </li>
-        <li>
-          <a class="btn" href="">Следующая</a>
-        </li>
-      </ul>
     </main>
     <div class="directory">
-      <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трёхрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <div class="container  directory__content">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трёхрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </div>
     </div>
     <footer class="footer-top">
-      <div class="container">
-        <div class="container__left">
+      <div class="container clearfix">
+        <div class="footer-top__left">
           <a class="logo" href="#">Техномарт</a>
           <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
           +7 (812) 555-05-55</p>
         </div>
-        <div class="container__right">
+        <div class="footer-top__right">
           <nav class="footer-top__nav">
             <a href="#">Компания</a>
             <a href="#">Новости</a>
@@ -214,26 +209,26 @@
             <a href="#">Спецпредложения</a>
           </nav>
         </div>
-        </div>
+      </div>
     </footer>
     <footer class="footer">
-      <div class="container">
-        <p class="container__left">2010-2016 Компания «Техномарт»<br>
-        Все права защищены</p>
+      <div class="container clearfix">
+        <span class="footer__left">2010-2016 Компания «Техномарт»<br>
+        Все права защищены</span>
         <div class="footer__social">
           <a class="footer__link footer__link--vk" href="#">Вконтакте</a>
           <a class="footer__link footer__link--fb" href="#">Фейсбук</a>
           <a class="footer__link footer__link--inst" href="#">Инстаграм</a>
         </div>
-        <div class="container__right  copyright">
+        <div class="footer__right  copyright">
           <div class="copyright__feedback">
             Обратная связь:
             <a href="#">mail@htmlacademy.ru</a>
-          </div>
+            </div>
           <div class="copyright__developer">
             Разработано -
             <a href="#">htmlacademy.ru</a>
-          </div>
+            </div>
         </div>
       </div>
     </footer>
