@@ -848,6 +848,7 @@ form.active::before {
   display: inline-block;
   width: 22px;
   height: 40px;
+  font-size: 0;
   border: none;
   background: transparent url("../img/spritesheet.png") no-repeat;
 }
