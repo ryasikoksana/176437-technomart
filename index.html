@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,7 +11,7 @@
     <header class="header-top">
       <div class="container  clearfix">
         <div class="container__left">
-          <a class="logo" href="#">Техномарт</a>
+          <a class="logo">Техномарт</a>
           <form class="header-top__search" action="#" method="post">
             <input type="text" name="search" value="Поиск:">
           </form>
@@ -26,11 +26,11 @@
     <header class="header">
       <div class="container  clearfix">
         <div class="header__name">
-          Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
+          Интернет-магазин строительных материалов и инструментов для ремонта
         </div>
         <div class="header__contacts">
           <span class="header__btn">+7 (812) 555-05-55</span><br>
-          <small>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</small>
+          <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
         <div class="header__user-block">
           <a class="header__link  header__link--login" href="#">Войти</a>
@@ -46,7 +46,7 @@
               <a class="block block--2" href="#">Компания</a>
             </li>
             <li class="container__nav--item">
-              <a class="block block--3" href="#">Каталог</a>
+              <a class="block block--3" href="/catalog.html">Каталог</a>
             </li>
             <li class="container__nav--item">
               <a class="block block--4" href="#">Новости</a>
@@ -93,18 +93,18 @@
                   <div class="slide__title">Перфораторы</div>
                   <b>Настоящие мужские игрушки</b>
                 </div>
-                <a class="btn" href="#">Открыть каталог</a>
-                <batton class="slide__batton  slide__batton--left" type="batton"></batton>
-                <batton class="slide__batton  slide__batton--right" type="batton"></batton>
+                <a class="btn" href="/catalog.html">Открыть каталог</a>
+                <button class="slide__button  slide__button--left" type="button">лево</button>
+                <button class="slide__button  slide__button--right" type="button">право</button>
               </div>
               <div class="slide">
                 <div class="slide__text">
                   <div class="slide__title">Дрели</div>
                   <b>Соседям на радость!</b>
                 </div>
-                <a class="btn" href="#">Открыть каталог</a>
-                <batton class="slide__batton  slide__batton--left" type="batton"></batton>
-                <batton class="slide__batton  slide__batton--right" type="batton"></batton>
+                <a class="btn" href="/catalog.html">Открыть каталог</a>
+                <button class="slide__button  slide__button--left" type="button">лево</button>
+                <button class="slide__button  slide__button--right" type="button">право</button>
               </div>
             </div>
           </div>
@@ -121,8 +121,8 @@
         </div>
       </div>
       <div class="title-color">
-        <h2>Популярные товары:</h2>
-        <a class="btn" href="#">Все популярные товары</a>
+        <h2 class="title  title-color__product">Популярные товары:</h2>
+        <a class="btn" href="/catalog.html">Все популярные товары</a>
       </div>
       <ul class="product">
         <li class="product__item">
@@ -130,19 +130,19 @@
             <a class="btn btn__basket" href="#">Купить</a>
             <a class="btn btn__bookmarks" href="#">В закладки</a>
           </div>
-          <div class="image">
+          <div class="image-1">
             <img src="img/product1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           </div>
           <b>Перфоратор BOSCH <br>BFG 9000</b>
           <span>32500 P.</span>
-          <a class="btn  btn__arrow" href="#">25500 P.</a>
+          <a class="btn btn__arrow" href="#">25500 P.</a>
         </li>
         <li class="product__item">
           <div class="actions">
             <a class="btn btn__basket" href="#">Купить</a>
             <a class="btn btn__bookmarks" href="#">В закладки</a>
           </div>
-          <div class="image">
+          <div class="image-2">
             <img src="img/product2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </div>
           <b>Перфоратор BOSCH <br>BFG 3000</b>
@@ -154,7 +154,7 @@
             <a class="btn btn__basket" href="#">Купить</a>
             <a class="btn btn__bookmarks" href="#">В закладки</a>
           </div>
-          <div class="image">
+          <div class="image-3">
             <img src="img/product3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           </div>
           <b>Перфоратор BOSCH <br>BFG 6000</b>
@@ -166,7 +166,7 @@
             <a class="btn btn__basket" href="#">Купить</a>
             <a class="btn btn__bookmarks" href="#">В закладки</a>
           </div>
-          <div class="image">
+          <div class="image-4">
             <img src="img/product4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           </div>
           <b class="name">Перфоратор BOSCH <br>BFG 2000</b>
@@ -174,7 +174,7 @@
         </li>
       </ul>
       <div class="title-color">
-        <h2>Популярные производители:</h2>
+        <h2 class="title  title-color__brands">Популярные производители:</h2>
         <a class="btn" href="#">Все производители</a>
       </div>
       <div class="brands">
@@ -207,10 +207,13 @@
     <div class="service">
       <div class="container  clearfix">
         <div class="service__slider">
+          <input type="radio" id="btn--1" name="service-toggle" checked>
+          <input type="radio" id="btn--2" name="service-toggle">
+          <input type="radio" id="btn--3" name="service-toggle">
           <div class="service__slider-controls">
-            <a class="service__link  service__link--1  active" href="#">Доставка</a>
-            <a class="service__link  service__link--2" href="#">Гарантия</a>
-            <a class="service__link  service__link--" href="#">Кредит</a>
+            <label class="service__delivery" for="btn--1">Доставка</label>
+            <label class="service__guarantee" for="btn--2">Гарантия</label>
+            <label class="service__credit" for="btn--3">Кредит</label>
           </div>
           <div class="service__slides">
             <div class="service__slide">
@@ -222,7 +225,7 @@
                 </div>
                 <div class="service__content--2">
                   <b class="service__content--title">Доставка</b>
-                  <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совешенно бесплатно!<br>
+                  <p class="service__content--text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                 </div>
               </div>
@@ -263,8 +266,8 @@
     <div class="container  content-contacts  clearfix">
       <div class="content">
         <h2 class="title">Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастробайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p class="text  text-1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастробайтерах.</p>
+        <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
         <ul class="content__delivery">
           <li><i></i>Деловые линии</li>
@@ -282,30 +285,20 @@
           </a>
         </div>
         <a class="btn" href="#">Заблудились? Напишите нам!</a>
-        <!--<form class="contacts__feedback" action="#" method="post">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
-          <br>
-          <p><label for="text-field">Текст письма:</label></p>
-          <textarea name="text" id="text-field" rows="5" cols="70" placeholder="В свободной форме"></textarea><br>
-          <input type="submit" value="Отправить">
-        </form>-->
       </div>
     </div>
     <footer class="footer-top">
-      <div class="container clearfix">
+      <div class="container  clearfix">
         <div class="footer-top__left">
           <a class="logo" href="#">Техномарт</a>
-          <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55</p>
         </div>
         <div class="footer-top__right">
           <nav class="footer-top__nav">
             <a href="#">Компания</a>
             <a href="#">Новости</a>
-            <a href="#">Каталог</a>
+            <a href="/catalog.html">Каталог</a>
             <a href="#">Доставка</a>
             <a href="#">Контакты</a>
           </nav>
@@ -319,8 +312,8 @@
       </div>
     </footer>
     <footer class="footer">
-      <div class="container clearfix">
-        <span class="footer__left">2010-2016 Компания «Техномарт»<br>
+      <div class="container  clearfix">
+        <span class="footer__left">© 2010-2016 Компания «Техномарт»
         Все права защищены</span>
         <div class="footer__social">
           <a class="footer__link footer__link--vk" href="#">Вконтакте</a>
@@ -333,11 +326,37 @@
             <a href="#">mail@htmlacademy.ru</a>
             </div>
           <div class="copyright__developer">
-            <span>Разработано -</span><br>
+            <span>Разработано —</span>
             <a href="#">htmlacademy.ru</a>
-            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="modal-content__form" action="#" method="post">
+        <div class="content">
+          <div class="content__name">
+            <label for="name-field">Ваше имя:</label><br>
+            <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="content__email">
+            <label for="email-field">Ваш e-mail:</label><br>
+            <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
+          </div>
+          <label class="text-textarea" for="text-field">Текст письма:</label>
+          <textarea name="text" id="text-field" rows="5"  placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="submit">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
   </body>
 </html>
+
+
