@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="header-top">
       <div class="container  clearfix">
         <div class="container__left">
-          <a class="logo" href="#">Техномарт</a>
+          <a class="logo" href="index.html">Техномарт</a>
           <form class="header-top__search" action="#" method="post">
             <input type="text" name="search" value="Поиск:">
           </form>
         </div>
         <div class="container__right">
           <a class="header-top__link  header-top__link--bookmarks" href="#">Закладки: 0</a>
-          <a class="header-top__link  header-top__link--basket" href="#">Корзина: 0</a>
+          <a class="header-top__link  header-top__link--basket  active" href="#">Корзина: 10</a>
           <a class= "header-top__link  header-top__link--btn" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -30,10 +30,10 @@
         </div>
         <div class="header__contacts">
           <span class="header__btn">+7 (812) 555-05-55</span><br>
-          <small>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</small>
+          <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
         <div class="header__user-block">
-          <span class="user-name">Равшан Джамшутович</span><br>
+          <span class="user-name">Равшан Джамшутович</span>
           <a class="user-order" href="#">Мои заказы</a>
           <i></i>
           <a class="user-cabinet" href="#">Личный кабинет</a>
@@ -42,7 +42,7 @@
         <nav class="container">
           <ul class="container__nav">
             <li class="container__nav--item">
-              <a class="block block--1" href="#">Главная</a>
+              <a class="block block--1" href="index.html">Главная</a>
             </li>
             <li class="container__nav--item">
               <a class="block block--2" href="#">Компания</a>
@@ -67,19 +67,19 @@
     </header>
     <main class="container  catalog  clearfix">
       <nav class="breadcrumbs">
-        <a class="breadcrumbs__link--home" href="#"></a>
+        <a class="breadcrumbs__link--home" href="index.html"></a>
         <a class="breadcrumbs__link--catalog" href="#">Каталог</a>
         <a class="breadcrumbs__link--tool" href="#">Инструмент</a>
         <span>Перфораторы</span>
       </nav>
       <h1 class="catalog__title">Перфораторы</h1>
-      <form class="filter" action="#" method="post">
+      <form class="filter" action="#" method="get">
         <span>Фильтр:</span>
         <h2 class="filter__title">Цена:</h2>
         <div class="range-filter">
           <div class="range-filter__controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div class="bar" style="margin-left: 20px; margin-right: 50px;"></div>
             </div>
             <div class="toggle toggle-min"></div>
             <div class="toggle toggle-max"></div>
@@ -88,7 +88,7 @@
             <label class="min-price">
               <input name="min-price" type="text" value="0">
             </label>
-            <label class="max-price">- <input name="max-price" type="text" value="30000"></label>
+            <label class="max-price"> -<input name="max-price" type="text" value="30000"></label>
           </div>
         </div>
         <div class="filter__brand">
@@ -100,7 +100,7 @@
           <label for="brand-2">ИНТЕРСКОЛ</label>
           <br>
           <input type="checkbox" name="brand-3" id="brand-3" checked>
-          <label for="brand-3">МACITA</label>
+          <label for="brand-3">МAKITA</label>
           <br>
           <input type="checkbox" name="brand-4" id="brand-4">
           <label for="brand-4">DEWALT</label>
@@ -108,13 +108,11 @@
           <input type="checkbox" name="brand-5" id="brand-5">
           <label for="brand-5">HITACHI</label>
         </div>
-        <h2 class="filter__title">Питание:</h2>
+        <h2 class="filter__title  title__property">Питание:</h2>
         <input type="radio" name="property-1" id="property-1" value="Аккумуляторные" checked>
         <label for="property-1">Аккумуляторные</label>
-        <br>
         <input type="radio" name="property-2" id="property-2" value="Сетевые">
         <label for="property-2">Сетевые</label>
-        <br>
         <button class="btn" type="button">Показать</button>
       </form>
       <div class="container  catalog-list">
@@ -132,7 +130,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-2">
               <img src="img/product2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 3000</b>
@@ -144,29 +142,21 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-3">
               <img src="img/product3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 6000</b>
             <span>30500 P.</span>
             <a class="btn  btn__arrow" href="#">25500 P.</a>
           </li>
-          <li class="product__item  product__item--new">
+          <li class="product__item  product__item--new  product__active">
             <div class="actions">
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-4">
               <img src="img/product4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </div>
-            <!--<form class="order">
-              </label>
-                <input type="checkbox" name="basket" checked>Товар добавлен в корзину!
-              </label>
-               <br>
-              <input type="submit" value="Оформить заказ">
-              <input type="submit" value="Продолжить покупки">
-            </form>-->
             <b class="name">Перфоратор BOSCH <br>BFG 2000</b>
             <a class="btn  btn__arrow" href="#">12500 P.</a>
           </li>
@@ -175,7 +165,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-2">
               <img src="img/product2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 3000</b>
@@ -187,7 +177,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-3">
               <img src="img/product3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 6000</b>
@@ -199,7 +189,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-4">
               <img src="img/product4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <b class="name">Перфоратор BOSCH <br>BFG 2000</b>
@@ -210,7 +200,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-2">
               <img src="img/product2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 3000</b>
@@ -222,7 +212,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-3">
               <img src="img/product3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <b>Перфоратор BOSCH <br>BFG 6000</b>
@@ -234,7 +224,7 @@
               <a class="btn btn__basket" href="#">Купить</a>
               <a class="btn btn__bookmarks" href="#">В закладки</a>
             </div>
-            <div class="image">
+            <div class="image-4">
               <img src="img/product4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <b class="name">Перфоратор BOSCH <br>BFG 2000</b>
@@ -245,22 +235,22 @@
           <a class="catalog__btn  active" href="">1</a>
           <a class="catalog__btn" href="">2</a>
           <a class="catalog__btn" href="">3</a>
-          <a class="catalog__btn" href="">Следующая</a>
+          <a class="catalog__btn catalog__btn--go" href="">Следующая</a>
         </div>
       </div>
     </main>
     <div class="directory">
       <div class="container  directory__content">
         <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трёхрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </div>
     <footer class="footer-top">
       <div class="container clearfix">
         <div class="footer-top__left">
-          <a class="logo" href="#">Техномарт</a>
-          <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+          <a class="logo" href="index.html">Техномарт</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55</p>
         </div>
         <div class="footer-top__right">
@@ -282,7 +272,7 @@
     </footer>
     <footer class="footer">
       <div class="container clearfix">
-        <span class="footer__left">2010-2016 Компания «Техномарт»<br>
+        <span class="footer__left">© 2010-2016 Компания «Техномарт»
         Все права защищены</span>
         <div class="footer__social">
           <a class="footer__link footer__link--vk" href="#">Вконтакте</a>
@@ -295,11 +285,24 @@
             <a href="#">mail@htmlacademy.ru</a>
             </div>
           <div class="copyright__developer">
-            Разработано -
+            <span>Разработано —</span>
             <a href="#">htmlacademy.ru</a>
             </div>
         </div>
       </div>
     </footer>
+    <div class="modal-basket">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="modal-basket__form" action="#" method="post">
+        <div class="modal-basket__content">
+          <input type="checkbox" name="basket" id="basket-field" checked>
+          <label for="basket-field">Товар добавлен в корзину!</label>
+        </div>
+        <div class="modal-basket__submit">
+          <button class="btn btn--order" type="submit">Оформить заказ</button>
+          <button class="btn btn--buy" type="submit">Продолжить покупки</button>
+        <div class="submit">
+      </form>
+    </div>
   </body>
 </html>
