@@ -309,7 +309,7 @@ img {
   vertical-align: top;
 }
 
-.header-top__search input {
+.header-top__search input{
   width: 218px;
   padding: 10px 3px 10px 45px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -321,19 +321,21 @@ img {
   background-color: #293449;
 }
 
-.header-top__search::before {
-  content: "";
+.button-form {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  border: none;
+  background: transparent url("../img/spritesheet.png") no-repeat;
   position: absolute;
   top: 13px;
   left: 17px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  width: 17px;
-  height: 17px;
   background-position: -1174px -10px;
   opacity: .3;
 }
 
-.header-top__search:hover::before {
+.button-form:hover {
   opacity: 1;
 }
 
@@ -343,7 +345,7 @@ img {
   background-color: #ffffff;
 }
 
- .header-top__search:active::before {
+.button-form:focus {
   background: transparent url("../img/spritesheet.png") no-repeat;
   background-position: -1211px -10px;
   opacity: 1;
@@ -2480,6 +2482,7 @@ input[type="radio"]:checked + label:disabled::after {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  z-index: 3000;
 }
 
 .modal-content-close::before,
