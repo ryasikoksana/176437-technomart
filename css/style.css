@@ -311,7 +311,7 @@ img {
 
 .header-top__search input{
   width: 218px;
-  padding: 10px 3px 10px 45px;
+  padding: 10px 3px 9px 45px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -345,7 +345,7 @@ img {
   background-color: #ffffff;
 }
 
-.button-form:focus {
+.header-top__search input:focus + .button-form {
   background: transparent url("../img/spritesheet.png") no-repeat;
   background-position: -1211px -10px;
   opacity: 1;
@@ -700,7 +700,7 @@ img {
 }
 
 .block--1 {
-  padding: 17px 33px 17px 52px;
+  padding: 17px 33px 17px 50px;
 }
 
 .block--2,
@@ -1254,10 +1254,10 @@ img {
 
 .product__item .btn__arrow {
   position: relative;
-  width: 66px;
   margin-bottom: 20px;
+  width: 140px;
   margin-left: 6px;
-  padding: 10px 38px 10px 36px;
+  padding: 10px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -1641,8 +1641,7 @@ img {
 
 .content .btn {
   margin-top: 16px;
-  padding-left: 41px;
-  padding-right: 40px;
+  width: 172px;
   background-color: #ee3643;
 }
 
@@ -1669,7 +1668,7 @@ img {
 }
 
 .contacts .btn {
-  padding: 12px 59px 10px 64px;
+  width: 252px;
   background-color: #ee3643;
 }
 
@@ -2250,7 +2249,7 @@ input[type="radio"]:checked + label:disabled::after {
 }
 
 .footer-top__nav a:nth-child(1) {
-  margin-left: 2px;
+  margin-left: 1px;
 }
 .footer-top__nav a:nth-child(3) {
  margin-right: 61px;
@@ -2286,7 +2285,7 @@ input[type="radio"]:checked + label:disabled::after {
 }
 
 .footer-top__categories a:first-child {
-  margin-left: 26px;
+  margin-left: 25px;
 }
 
 .footer-top__categories a:last-child {
