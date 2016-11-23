@@ -7,7 +7,6 @@ var inputemail = popup.querySelector("[name=email]");
 var textarea = popup.querySelector("textarea");
 var storage = localStorage.getItem("inputname");
 var storage2 = localStorage.getItem("inputemail");
-
 link.addEventListener("click", function(event) {
 event.preventDefault();
 popup.classList.add("modal-content-show");
@@ -61,3 +60,4 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
